@@ -1,768 +1,941 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'montserrat';
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat";
+  color: white;
 }
 
 #cursor {
-    height: 15px;
-    width: 15px;
-    background-color: #95c11e;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 99;
-    transition: all 0.2s ease;
+  height: 15px;
+  width: 15px;
+  background-color: #95c11e;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+  transition: all 0.2s ease;
 }
 
 #cursor-blur {
-    height: 350px;
-    width: 350px;
-    background-color: #d2e991b2;
-    border-radius: 50%;
-    position: fixed;
-    filter: blur(60px);
-    z-index: 9;
+  height: 350px;
+  width: 350px;
+  background-color: #d2e991b2;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(60px);
+  z-index: 9;
 }
 
 .nav {
-    height: 145px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    gap: 50px;
-    align-items: center;
-    padding: 0 100px;
-    position: fixed;
-    z-index: 99;
+  height: 145px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
+  padding: 0 100px;
+  position: fixed;
+  z-index: 99;
 }
 
 .nav img {
-    height: 75px;
+  height: 75px;
 }
 
 .nav h4 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
 }
 
 .main {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.245);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.245);
 }
 
 #page1 {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    z-index: 10;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
 }
 
 #page1 h1 {
-    font-size: 140px;
-    font-weight: 900;
-    position: relative;
+  font-size: 140px;
+  font-weight: 900;
+  position: relative;
 }
 
 #page1 h1::before {
-    content: "EAT. DRINK. PLAY.";
-    position: absolute;
-    color: black;
-    top: -6px;
-    left: -6px;
-    -webkit-text-stroke: 1.5px #95c11e;
-    z-index: -1;
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: black;
+  top: -6px;
+  left: -6px;
+  -webkit-text-stroke: 1.5px #95c11e;
+  z-index: -1;
 }
 
 #page1 h2 {
-    font-size: 33px;
-    font-weight: 800;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
+  font-size: 33px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #page1 p {
-    font-size: 23px;
-    font-weight: 400;
-    width: 60%;
-    text-align: center;
-    z-index: 10;
-
+  font-size: 23px;
+  font-weight: 400;
+  width: 60%;
+  text-align: center;
+  z-index: 10;
 }
 
 #page1 .arrow {
-    height: 200px;
-    width: 200px;
-    background-color: transparent;
-    border: 2px solid #95c11e;
-    font-weight: 900;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: -2%;
-    bottom: -2%;
-    transition: all ease 0.5s;
-
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  border: 2px solid #95c11e;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -2%;
+  bottom: -2%;
+  transition: all ease 0.5s;
 }
 
 #page1 .arrow i {
-    font-size: 50px;
-    font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 #page1 .arrow:hover {
-    scale: 0.3;
-    background-color: #95c11e;
-
+  scale: 0.3;
+  background-color: #95c11e;
 }
 
-
-
 .page2 {
-    height: auto;
-    width: 100%;
-    z-index: 10;
-    padding: 160px 0;
+  height: auto;
+  width: 100%;
+  z-index: 10;
+  padding: 160px 0;
 }
 
 .scroller {
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: relative;
-    z-index: 10;
-    position: relative;
-    padding-bottom: 50px;
-
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 50px;
 }
 
 .scroller::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .scroller-in {
-    display: inline-block;
-    white-space: nowrap;
-    animation-name: scroll;
-    animation-duration: 40s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .scroller h4 {
-    display: inline-block;
-    font-size: 100px;
-    font-weight: 900;
-    font-family: gilroy;
-    margin-right: 20px;
-    color: transparent;
-    -webkit-text-stroke: 2px rgb(192, 196, 189);
-    text-transform: uppercase;
-
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: gilroy;
+  margin-right: 20px;
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(192, 196, 189);
+  text-transform: uppercase;
 }
 
 .scroller :hover {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 #about-us {
-    height: 40vh;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    padding: 0px 50px;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    z-index: 10;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding-top: 25px;
-
+  height: 40vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  padding: 0px 50px;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 25px;
 }
 
-
 .img {
-    height: 220px;
-    width: 220px;
-    border-radius: 20px;
-    position: relative;
-    z-index: 10;
-
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
 }
 
 .img1 {
-    height: 200px;
-    width: 220px;
-    border-radius: 20px;
-    position: relative;
-    z-index: 10;
+  height: 200px;
+  width: 220px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
 }
 
 .about-us-in p {
-    width: 900px;
-    padding: 20px 40px;
-    position: relative;
-    font-weight: 700;
-    text-align: center;
-    bottom: 90px;
-    font-size: 20px;
-    line-height: 30px;
-    z-index: 10;
-    margin-top: 120px;
-
-
+  width: 900px;
+  padding: 20px 40px;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  bottom: 90px;
+  font-size: 20px;
+  line-height: 30px;
+  z-index: 10;
+  margin-top: 120px;
 }
 
 .about-us-in h3 {
-    margin-bottom: 90px;
-    text-align: center;
-    font-size: 55px;
-    font-weight: 800;
-    position: relative;
-    z-index: 10;
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 800;
+  position: relative;
+  z-index: 10;
 }
 
 #card-container {
-    /*background-color: red;*/
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    position: relative;
-    z-index: 10;
-    margin-top: 20PX;
-    margin-bottom: 30px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .card {
-    height: 80%;
-    width: 20%;
-    /* background-color: #95c11e;*/
-    border-radius: 30px;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    transition: all ease 0.6s;
-
+  height: 80%;
+  width: 20%;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
 }
 
 #card1 {
-    background-image: url(card3.jpg);
-
+  background-image: url(card3.jpg);
 }
 
 #card2 {
-    background-image: url(card1.jpg);
-
+  background-image: url(card1.jpg);
 }
 
 #card3 {
-    background-image: url(card2.jpg);
-
+  background-image: url(card2.jpg);
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    background-color: #95c11e;
-    padding: 30px;
-    padding-top: 80px;
-    opacity: 0;
-    transition: all ease 0.6s;
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  padding: 30px;
+  padding-top: 80px;
+  opacity: 0;
+  transition: all ease 0.6s;
 }
 
 .overlay h4 {
-    font-size: 25px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #000;
-    white-space: nowrap;
-    margin-bottom: 20px;
-
-
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  white-space: nowrap;
+  margin-bottom: 20px;
 }
 
 .overlay p {
-    font-size: 18px;
-    color: #000;
-
+  font-size: 18px;
+  color: #000;
 }
 
 .card:hover .overlay {
-    gap: 100vh;
-    opacity: 1;
-    border-radius: 20px;
+  gap: 100vh;
+  opacity: 1;
+  border-radius: 20px;
 }
 
 .card:hover {
-    transform: rotate3d(-1, -1, 0, 30deg);
+  transform: rotate3d(-1, -1, 0, 30deg);
 }
 
 .green-div {
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #95c11e;
-
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #95c11e;
 }
 
 .green-div h4 {
-    text-transform: uppercase;
-    font-size: 23px;
-    width: 45%;
-    text-align: center;
-    line-height: 40px;
-
-
+  text-transform: uppercase;
+  font-size: 23px;
+  width: 45%;
+  text-align: center;
+  line-height: 40px;
 }
 
 .green-div img {
-    height: 100%;
-    object-fit: cover;
-    width: 14%;
+  height: 100%;
+  object-fit: cover;
+  width: 14%;
 }
 
 .page3 {
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .page3 p {
-    position: relative;
-    width: 55%;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-    z-index: 10;
+  position: relative;
+  width: 55%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  z-index: 10;
 }
 
 .page3 .colon1 {
-    left: 18%;
-    top: 20%;
-
+  left: 18%;
+  top: 20%;
 }
 
-
 .page3 .colon2 {
-    right: 15%;
-    bottom: 25%;
+  right: 15%;
+  bottom: 25%;
 }
 
 .page3 img {
-    height: 60px;
-    position: absolute;
+  height: 60px;
+  position: absolute;
 }
 
 .page4 {
-    position: relative;
-    height: 30vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-
-
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
 }
 
 .elem {
-    height: 70%;
-    width: 25%;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-    z-index: 10;
-    text-align: center;
+  height: 70%;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
 }
 
 .elem h2 {
-    height: 100%;
-    width: 100%;
-    background-color: #95c11e;
-    display: flex;
-    color: #000;
-    font-weight: 900;
-    align-items: center;
-    justify-content: center;
-    transition: all ease 0.6s;
-    font-size: 40px;
-    position: absolute;
-    z-index: 10;
-
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  display: flex;
+  color: #000;
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.6s;
+  font-size: 40px;
+  position: absolute;
+  z-index: 10;
 }
 
 .elem img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    scale: 1.1;
-    z-index: 10;
-    scale: 1.1;
-
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.1;
+  z-index: 10;
 }
 
 .elem:hover h2 {
-    color: white;
-    background-color: transparent;
+  color: white;
+  background-color: transparent;
 }
 
 .elem:hover img {
-    scale: 1;
+  scale: 1;
 }
 
 .page4 h1 {
-    font-size: 85px;
-    position: absolute;
-    top: -40%;
-    font-weight: 900;
-    font-family: gilroy;
-    color: #000;
-    -webkit-text-stroke: 2px #fff;
-
+  font-size: 85px;
+  position: absolute;
+  top: -40%;
+  font-weight: 900;
+  font-family: gilroy;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
 }
 
 #footer {
-    height: 40vh;
-    width: 100%;
-    background: linear-gradient(to left bottom, #119f31, #ace022);
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6.5vw;
+  padding: 0 100px;
 }
 
-#footer {
-    height: 40vh;
-    width: 100%;
-    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 6.5vw;
-    padding: 0 100px;
-}
-
-#footer>img {
-    position: absolute;
-    left: 0;
-    height: 100%;
-    z-index: 0;
+#footer > img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 0;
 }
 
 #f1 img {
-    height: 100px;
+  height: 100px;
 }
 
 #f1,
 #f2,
 #f3,
 #f4 {
-    width: fit-content;
-    position: relative;
-    z-index: 99;
-    /* background-color: red; */
+  width: fit-content;
+  position: relative;
+  z-index: 99;
 }
 
 #f2 h3 {
-    font-size: 1.6vw;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 900;
-    margin-bottom: 8px;
+  font-size: 1.6vw;
+  white-space: normal;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 8px;
 }
 
 #f3 h3 {
-    font-size: 1.6vw;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 800;
-    margin-bottom: 8px;
+  font-size: 1.6vw;
+  white-space: normal;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 
 #f4 h4 {
-    font-size: 1vw;
-    white-space: nowrap;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 8px;
+  font-size: 1vw;
+  white-space: normal;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
 }
-
-
-
-
-@media (max-width: 1024px) {
-
-    #cursor,
-    #cursor-blur {
-        display: none !important;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .nav {
-        padding: 0 20px;
-        gap: 12px;
-        height: 90px;
-        align-items: center;
-    }
-
-    .nav img {
-        height: 50px;
-    }
-
-    .nav h4 {
-        display: none;
-    }
-
-    #page1 h1 {
-        font-size: 48px;
-        line-height: 1.05;
-        -webkit-text-stroke: 1px #95c11e;
-    }
-
-    #page1 h2 {
-        font-size: 20px;
-        margin-top: 6px;
-        margin-bottom: 12px;
-    }
-
-    #page1 p {
-        font-size: 16px;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    #page1 .arrow {
-        height: 110px;
-        width: 110px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 10px;
-    }
-
-    .scroller h4 {
-        font-size: 48px;
-    }
-
-    #about-us {
-        flex-direction: column;
-        padding: 20px;
-        gap: 18px;
-        height: auto;
-        text-align: center;
-    }
-
-    .img,
-    .img1 {
-        height: 160px;
-        width: 160px;
-    }
-
-    .about-us-in p {
-        width: 95%;
-        margin: 0 auto;
-        padding: 10px;
-        bottom: 0;
-        margin-top: 0;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .about-us-in h3 {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-
-    #card-container {
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-        padding: 30px 10px;
-        margin-bottom: 20px;
-    }
-
-    .card {
-        width: 95%;
-        height: 320px;
-        border-radius: 18px;
-    }
-
-    .overlay {
-        padding-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .overlay h4 {
-        font-size: 20px;
-        white-space: normal;
-    }
-
-    .overlay p {
-        font-size: 15px;
-    }
-
-    .green-div {
-        flex-direction: column;
-        gap: 12px;
-        padding: 20px;
-        height: auto;
-        text-align: center;
-    }
-
-    .green-div img {
-        width: 40px;
-        height: auto;
-    }
-
-    .page3 p {
-        width: 90%;
-        font-size: 18px;
-        line-height: 26px;
-        padding: 20px;
-    }
-
-    .page3 img {
-        display: none;
-    }
-
-    .page4 {
-        flex-direction: column;
-        gap: 18px;
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .elem {
-        width: 95%;
-        height: 220px;
-    }
-
-    .elem h2 {
-        font-size: 22px;
-        position: absolute;
-    }
-
-    .page4 h1 {
-        font-size: 40px;
-        top: -10%;
-        -webkit-text-stroke: 1px #fff;
-    }
-
-    #footer {
-        padding: 30px 20px;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #f1 img {
-        height: 70px;
-    }
-
-    #f2,
-    #f3,
-    #f4 {
-        width: 100%;
-        text-align: center;
-    }
-
-    #f2 h3,
-    #f3 h3 {
-        font-size: 16px;
-        white-space: normal;
-    }
-
-    #f4 h4 {
-        font-size: 14px;
-        white-space: normal;
-        line-height: 20px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    #page1 h1 {
-        font-size: 36px;
-    }
-
-    .scroller h4 {
-        font-size: 36px;
-    }
-
-    .nav img {
-        height: 44px;
-    }
-
-    #page1 p {
-        font-size: 14px;
-    }
-
-    .card {
-        height: 260px;
-    }
-
-    .elem {
-        height: 180px;
-    }
-}
-
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-
 * {
-    word-break: break-word;
+  word-break: break-word;
 }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
-    .scroller h4 {
-        font-size: 80px;
-    }
+  .scroller h4 {
+    font-size: 80px;
+  }
 
-    #page1 h1 {
-        font-size: 100px;
-    }
+  #page1 h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #cursor,
+  #cursor-blur {
+    display: none !important;
+  }
+
+  .nav {
+    padding: 0 30px;
+    gap: 20px;
+    height: 120px;
+  }
+
+  .nav img {
+    height: 60px;
+  }
+
+  .nav h4 {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #page1 h1 {
+    font-size: 80px;
+    line-height: 1.1;
+  }
+
+  #page1 h2 {
+    font-size: 24px;
+  }
+
+  #page1 p {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  #page1 .arrow {
+    height: 150px;
+    width: 150px;
+  }
+
+  .scroller h4 {
+    font-size: 60px;
+    margin-right: 15px;
+  }
+
+  #about-us {
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .img,
+  .img1 {
+    height: 180px;
+    width: 180px;
+  }
+
+  .about-us-in p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    bottom: 50px;
+    margin-top: 40px;
+  }
+
+  .about-us-in h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  #card-container {
+    gap: 30px;
+  }
+
+  .card {
+    width: 25%;
+    height: 70%;
+  }
+
+  .overlay h4 {
+    font-size: 20px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .green-div {
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .green-div h4 {
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .green-div img {
+    width: 20px;
+    height: auto;
+  }
+
+  .page3 p {
+    width: 85%;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .page4 {
+    gap: 40px;
+  }
+
+  .elem {
+    width: 30%;
+    height: 60%;
+  }
+
+  .elem h2 {
+    font-size: 28px;
+  }
+
+  .page4 h1 {
+    font-size: 60px;
+  }
+
+  #footer {
+    padding: 40px 30px;
+    gap: 4vw;
+    height: auto;
+  }
+
+  #f1 img {
+    height: 80px;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 16px;
+  }
+
+  #f4 h4 {
+    font-size: 13px;
+    line-height: 20px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 15px;
+    gap: 10px;
+    height: 80px;
+    align-items: center;
+  }
+
+  .nav img {
+    height: 45px;
+  }
+
+  .nav h4 {
+    display: none;
+    font-size: 11px;
+  }
+
+  #page1 {
+    padding-top: 80px;
+  }
+
+  #page1 h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    -webkit-text-stroke: 1px #95c11e;
+  }
+
+  #page1 h1::before {
+    -webkit-text-stroke: 0.5px #95c11e;
+  }
+
+  #page1 h2 {
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+
+  #page1 p {
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #page1 .arrow {
+    height: 110px;
+    width: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+
+  #page1 .arrow i {
+    font-size: 30px;
+  }
+
+  .page2 {
+    padding: 100px 0;
+  }
+
+  .scroller h4 {
+    font-size: 48px;
+    margin-right: 15px;
+  }
+
+  #about-us {
+    flex-direction: column;
+    padding: 20px;
+    gap: 18px;
+    height: auto;
+    text-align: center;
+  }
+
+  .img,
+  .img1 {
+    height: 160px;
+    width: 160px;
+  }
+
+  .about-us-in p {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    bottom: 0;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-us-in h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  #card-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 95%;
+    height: 320px;
+    border-radius: 18px;
+  }
+
+  .overlay {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .overlay h4 {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .overlay p {
+    font-size: 15px;
+  }
+
+  .green-div {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .green-div h4 {
+    font-size: 18px;
+    width: 95%;
+    line-height: 28px;
+    white-space: normal;
+    color: #000;
+  }
+
+  .green-div img {
+    width: 40px;
+    height: auto;
+    display: none;
+  }
+
+  .page3 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .page3 p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 20px;
+  }
+
+  .page3 img {
+    display: none;
+  }
+
+  .page4 {
+    flex-direction: column;
+    gap: 18px;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .elem {
+    width: 95%;
+    height: 220px;
+  }
+
+  .elem h2 {
+    font-size: 22px;
+    position: absolute;
+  }
+
+  .page4 h1 {
+    font-size: 40px;
+    top: -10%;
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  #footer {
+    padding: 25px 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+  }
+
+  #footer > img {
+    display: none;
+  }
+
+  #f1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #f1 img {
+    height: 65px;
+  }
+
+  #f2,
+  #f3,
+  #f4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 14px;
+    white-space: normal;
+    margin-bottom: 5px;
+  }
+
+  #f4 h4 {
+    font-size: 12px;
+    white-space: normal;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #page1 h1 {
+    font-size: 32px;
+  }
+
+  .scroller h4 {
+    font-size: 32px;
+  }
+
+  .nav {
+    padding: 0 12px;
+    gap: 8px;
+    height: 70px;
+  }
+
+  .nav img {
+    height: 40px;
+  }
+
+  #page1 p {
+    font-size: 13px;
+    width: 92%;
+  }
+
+  .card {
+    height: 250px;
+    width: 95%;
+  }
+
+  .elem {
+    height: 170px;
+    width: 95%;
+  }
+
+  #footer {
+    padding: 20px 12px;
+    gap: 10px;
+  }
+
+  #f1 img {
+    height: 55px;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 12px;
+    white-space: normal;
+    margin-bottom: 4px;
+  }
+
+  #f4 h4 {
+    font-size: 11px;
+    white-space: normal;
+    line-height: 16px;
+  }
+
+  .green-div h4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
